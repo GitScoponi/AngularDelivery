@@ -1,3 +1,4 @@
+import { RestaurantService } from './../Services/Restaurant.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -10,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component'
 import { ROUTES } from './app.route';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
+import { RestaurantComponent } from '../app/restaurants/restaurant/restaurant.component';
 
 
 @NgModule({
@@ -18,14 +20,15 @@ import { RestaurantsComponent } from './restaurants/restaurants.component';
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    RestaurantsComponent
+    RestaurantsComponent,
+    RestaurantComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [RestaurantService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

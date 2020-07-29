@@ -1,0 +1,1 @@
+export const MeatApi = 'http://localhost:3000'
