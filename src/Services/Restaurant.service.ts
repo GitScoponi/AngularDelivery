@@ -1,3 +1,4 @@
+import { IMenuItem } from './../Model/MenuItem.Model';
 import { ErrorHandler } from './../app/app.errorHandler';
 import { Injectable } from '@angular/core';
 import { IRestaurant } from 'Model/Restaurant.Model';
@@ -28,6 +29,12 @@ export class RestaurantService {
     getReviews(id: string): Observable<any>
     {
         return this.http.get(`${MeatApi}/restaurants/${id}/reviews`)
+        .map(response => response.json())
+        .catch(ErrorHandler.handleError );
+    }
+    getMenu(id: string): Observable<IMenuItem[]>
+    {
+        return this.http.get(`${MeatApi}/restaurants/${id}/menu`)
         .map(response => response.json())
         .catch(ErrorHandler.handleError );
     }
