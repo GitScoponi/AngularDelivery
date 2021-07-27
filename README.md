@@ -1,5 +1,6 @@
 # Meat - Angular App Starter
-![MeatDelivery](https://user-images.githubusercontent.com/41170506/127166844-c29df6a1-76d0-46a9-a572-4910ea655a40.gif)
+![MeatDelivery (1)](https://user-images.githubusercontent.com/41170506/127167267-1a1bc01a-ce56-45cd-b2bc-45e650cddcbe.gif)
+
 
 ## 1. Passos para começar
 
